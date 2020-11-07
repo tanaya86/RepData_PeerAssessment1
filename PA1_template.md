@@ -37,7 +37,7 @@ databydate <- stepdata %>% select(date, steps) %>% group_by(date) %>% summarize(
 hist(databydate$tsteps, col = "pink" , xlab = "Number of steps per day",main="Total number of steps taken each day", breaks = 20)
 ```
 
-![al image](C:\Users\tanay\OneDrive\Desktop\Coursera\image_1.png)
+![image](C:\Users\tanay\OneDrive\Desktop\Coursera\image_1.png)
 
 **Mean and median number of steps taken each day**
 ```{r}
@@ -62,7 +62,7 @@ plot(databyinterval, type = "l",
      xlab = "5-min intervals")
 ```
 
-![al image](C:\Users\tanay\OneDrive\Desktop\Coursera\image_2.png)
+![image](C:\Users\tanay\OneDrive\Desktop\Coursera\image_2.png)
 
 The 5-minute interval that, on average, contains the maximum number of steps
 ```{r}
@@ -143,6 +143,8 @@ summary(FullSummedDataByDay)
 print(summary(FullSummedDataByDay))
 hist(FullSummedDataByDay$totalsteps, col = "violet", xlab = "Number of Steps per day", ylab = "Frequency", main = "Total number of steps taken each day", breaks = 20)
 ```
+
+![image](C:\Users\tanay\OneDrive\Desktop\Coursera\image_3.png)
 
 ```
 date totalsteps
@@ -255,8 +257,6 @@ newmedian <- median(FullSummedDataByDay$totalsteps)
 10766.19
 ```
 
-![al image](C:\Users\tanay\OneDrive\Desktop\Coursera\image_3.png)
-
 Old median and New median
 ```{r}
 print(oldmedian)
@@ -284,4 +284,4 @@ plot(ggplot(meandataweekendweekday, aes(x=interval, y=steps, color=weekend)) +
   ggtitle("Weekdays and weekends activity patterns"))
 ```
 
-![al image](C:\Users\tanay\OneDrive\Desktop\Coursera\image_4.png)
+![image](C:\Users\tanay\OneDrive\Desktop\Coursera\image_4.png)
