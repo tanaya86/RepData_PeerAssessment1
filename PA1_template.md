@@ -37,7 +37,7 @@ databydate <- stepdata %>% select(date, steps) %>% group_by(date) %>% summarize(
 hist(databydate$tsteps, col = "pink" , xlab = "Number of steps per day",main="Total number of steps taken each day", breaks = 20)
 ```
 
-![image](C:\Users\tanay\OneDrive\Desktop\Coursera\image_1.png)
+![alt text](https://github.com/tanaya86/RepData_PeerAssessment1/blob/master/image_1.png)
 
 **Mean and median number of steps taken each day**
 ```{r}
@@ -62,7 +62,7 @@ plot(databyinterval, type = "l",
      xlab = "5-min intervals")
 ```
 
-![image](C:\Users\tanay\OneDrive\Desktop\Coursera\image_2.png)
+![alt text](https://github.com/tanaya86/RepData_PeerAssessment1/blob/master/image_2.png)
 
 The 5-minute interval that, on average, contains the maximum number of steps
 ```{r}
@@ -144,7 +144,8 @@ print(summary(FullSummedDataByDay))
 hist(FullSummedDataByDay$totalsteps, col = "violet", xlab = "Number of Steps per day", ylab = "Frequency", main = "Total number of steps taken each day", breaks = 20)
 ```
 
-![image](C:\Users\tanay\OneDrive\Desktop\Coursera\image_3.png)
+![alt text](https://github.com/tanaya86/RepData_PeerAssessment1/blob/master/image_3.png)
+
 
 ```
 date totalsteps
@@ -284,4 +285,5 @@ plot(ggplot(meandataweekendweekday, aes(x=interval, y=steps, color=weekend)) +
   ggtitle("Weekdays and weekends activity patterns"))
 ```
 
-![image](C:\Users\tanay\OneDrive\Desktop\Coursera\image_4.png)
+![alt text](https://github.com/tanaya86/RepData_PeerAssessment1/blob/master/image_4.png)
+
